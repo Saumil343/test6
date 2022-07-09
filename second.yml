@@ -16,4 +16,4 @@
         dest: /var/www/html
 
     - name: service
-      shell: systemctl restart sshd
+      shell: systemctl restart httpd
