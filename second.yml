@@ -1,19 +1,19 @@
 ---
 - hosts: 172.31.36.60
   tasks:
-- name: deleteing web files
-  shell: rm -rf /var/www/html/*
+    - name: deleteing web files
+     shell: rm -rf /var/www/html/*
 
-- name: cleaning files
-  shell: rm -rf ~/test1
+    - name: cleaning files
+      shell: rm -rf ~/test1
 
-- name: pull
-  shell: git clone https://github.com/Saumil343/test1.git
+    - name: pull
+      shell: git clone https://github.com/Saumil343/test1.git
 
-- name: copy
-  copy:
-  src: ~/test1
-  dest: /var/www/html
+    - name: copy
+      copy:
+        src: ~/test1
+        dest: /var/www/html
 
-- name: service
-  shell: systemctl restart sshd
+    - name: service
+      shell: systemctl restart sshd
