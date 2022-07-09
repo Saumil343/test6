@@ -12,8 +12,8 @@
 
     - name: copy
       copy:
-        src: ~/test1
-        dest: /var/www/html
+        remote_src: ~/test1
+        remote_dest: /var/www/html
 
     - name: service1
       service:
