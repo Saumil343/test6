@@ -1,8 +1,8 @@
 ---
 - hosts: 172.31.36.60
   tasks:
-    - name: deleteing web files
-     shell: rm -rf /var/www/html/*
+    - name: saunil
+      shell: rm -rf /var/www/html/*
 
     - name: cleaning files
       shell: rm -rf ~/test1
