@@ -15,5 +15,7 @@
         src: ~/test1
         dest: /var/www/html
 
-    - name: service
-      shell: systemctl restart httpd
+    - name: service1
+      service:
+        name: httpd
+        state: restarted
