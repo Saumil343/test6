@@ -1,8 +1,20 @@
 ---
 - hosts: 172.31.36.60
   tasks:
-    - name: docker builds
-      shell: docker build -t saumil343/demoapp3 ~/fishy/
+    - name: saunil
+      shell: rm -rf /var/www/html/*
 
-    - name: docker run
-      shell: docker run -d -it -p 3000:3000 saumil343/demoapp3
+    - name: cleaning files
+      shell: rm -rf ~/test1
+
+    - name: pull
+      shell: git clone https://github.com/Saumil343/test1.git
+
+    - name: copy
+      shell: cp -r ~/test1 /var/www/html/
+      
+    - name: service1
+      service:
+        name: httpd
+        state: restarted
+   
