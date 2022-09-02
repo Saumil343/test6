@@ -1,2 +1,2 @@
 #! /bin/bash
-mkdir /home/ec2-user/police 
+sudo chmod -R 777 /var/www/html/
