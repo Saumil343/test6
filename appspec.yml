@@ -8,8 +8,8 @@ hooks:
     - location: scripts/install_dependencies.sh
       timeout: 300
   BeforeInstall:
-    - location: scripts/start_server.sh
+    - location: ./scripts/dp1.sh
       timeout: 300
   ApplicationStart:
-    - location: scripts/stop_server.sh
+    - location: ./scripts/dp2.sh
       timeout: 300
