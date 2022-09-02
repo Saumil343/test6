@@ -10,6 +10,3 @@ hooks:
   BeforeInstall:
     - location: test.sh
       timeout: 300
-  ApplicationStart:
-    - location: ./scripts/dp2.sh
-      timeout: 300
