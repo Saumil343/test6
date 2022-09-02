@@ -4,9 +4,11 @@ files:
   - source: /
     destination: /var/www/html/
 hooks:
-  ApplicationStop:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
   BeforeInstall:
     - location: test.sh
       timeout: 300
+  AfterInstall:
+    - location: test2.sh
+      timeout: 300
+      
+      
